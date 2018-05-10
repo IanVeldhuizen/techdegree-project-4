@@ -12,6 +12,28 @@ lightbox.option({
 
 //======================== search
 
+$(document).ready(function () {
+
+const $search = $("#userSearch");
+const $img = $(this).find("a").attr("data-title");
+
+$($search).keyup(function() {
+
+    const $result = $($search).val().toLowerCase();
+    
+    for (let i = 0; i < $img.length; i++) {
+        const $title = $($img[i].getAttribute("data-title"));
+        if ($title.toLowerCase().includes($result)) {
+            $($img[i]).show();
+        }else {
+            $($img[i]).hide();
+        }
+    }
+})
+
+});
+
+/* ORIGINAL SUMBIT
 
 $(document).ready(function () {
     $("#userSearch").keyup(function () {
@@ -29,5 +51,5 @@ $(document).ready(function () {
 
 });
 
-
+*/
 
