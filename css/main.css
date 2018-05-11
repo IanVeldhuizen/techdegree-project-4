@@ -49,7 +49,7 @@
     box-shadow: 1px 1px 25px 1px rgba(0, 0, 0, 0.486);
   }
 
-  .gallery:hover {
+  .gallery img:hover {
     box-shadow: 2px 3px 20px 2px rgba(0, 0, 0, 0.705);
   }
 
@@ -78,16 +78,13 @@
     padding: 8px;
   }
 
-  .gallery {
-    margin: 25px;
-    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.486);
-    border-radius: 4px;
-  }
 
   .gallery img {
     display: block;
-    width: 100%;
+    width: 200px;
     border-radius: 4px;
+    margin: 25px;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.486);
   }
 
   .lb-data .lb-details{
