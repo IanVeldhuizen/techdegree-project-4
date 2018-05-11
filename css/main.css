@@ -35,7 +35,7 @@
   }
 
   input {
-    width: 70%;
+    width: 80%;
     padding: 12px 5px;
     font-size: 1em;
     color: #fff;
@@ -103,16 +103,23 @@
     font-weight: lighter;
   }
 
-@media (max-width: 680px) {
+
+  @media (min-width: 680px) {
 
     input {
-      width: 80%;
+      width: 70%;
     padding: 10px 5px;
     }
 
     .icon {
-      margin-top: 10px;
+      margin-top: 0px;
       
     }
 
+  }
+
+  @media (min-width: 366px) {
+    .icon {
+      margin-top: 10px;
+    }
   }
